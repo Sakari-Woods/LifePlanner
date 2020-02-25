@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="css/landing.css">
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.emit("msg","A User Connected!");
+
+      socket.on('msg', function(data){
+        console.log(data);
+      });
+    </script>
+
+    <div id="header">
+      <div id="navMenu"></div>
+    </div>
+
+    <div id="displayBox">x</div>
+
+    <div id="footer">
+      <div id="footerMenu"></div>
+    </div>
+
+
+    </body>
+    </html>
