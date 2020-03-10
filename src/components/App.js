@@ -13,7 +13,7 @@ class App extends React.Component {
         </div>
         <p className="App-intro">
         Initial Splash Screen.
-        <Login/>
+        <div id="loginBox"><Login/></div>
         </p>
       </div>
     );
